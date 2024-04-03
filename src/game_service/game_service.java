@@ -3,17 +3,22 @@ import Buttons.CookieButton;
 import model.*;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 
 public class game_service {
     private Player player;
     private JFrame MainFrame = null;
+    private JLabel PlayerInfo = null;
+    Timer timer;
     public game_service(Player p){
         this.player = p;
         this.createGUI();
     }
     public Player getPlayer(){return this.player;}
     public JFrame getMainFrame(){return this.MainFrame;}
+    public JLabel getPlayerInfo(){return this.PlayerInfo;}
     private void setUpMainFrame(){
         //Create main frame
         MainFrame = new JFrame("Cookie clicker");
@@ -37,9 +42,9 @@ public class game_service {
         playerIcon.setBounds(0, 0, 200, 50);
         playerPanel.add(playerIcon);
 
-        JLabel playerInfo = new JLabel("<html>" + player.toString().replaceAll("\n", "<br/>") + "</html>");
-        playerInfo.setBounds(0, 0, 200, 50);
-        playerPanel.add(playerInfo);
+        PlayerInfo = new JLabel("<html>" + player.toString().replaceAll("\n", "<br/>") + "</html>");
+        PlayerInfo.setBounds(0, 0, 200, 50);
+        playerPanel.add(PlayerInfo);
 
         //Create the button for the cookie clicker
         JButton cookie_button = new CookieButton(this);
@@ -53,4 +58,5 @@ public class game_service {
         MainFrame.add(playerPanel, BorderLayout.NORTH);
         MainFrame.setVisible(true);
     }
+
 }
