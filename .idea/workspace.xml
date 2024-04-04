@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd01cc40-5592-48cf-a4d3-ddcef39cc0ad" name="Changes" comment="trying some things">
+    <list default="true" id="bd01cc40-5592-48cf-a4d3-ddcef39cc0ad" name="Changes" comment="fixed PlayerInfo Label">
+      <change afterPath="$PROJECT_DIR$/pictures/cursor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/CookieMaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Cursor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Grandma.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/player.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/pictures/player.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Buttons/CookieButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Buttons/CookieButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game_service/game_service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_service/game_service.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,17 +37,20 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2eabywK6x93NfmUq2Y5gvy8K5w3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -78,7 +85,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712145896111</updated>
-      <workItem from="1712145897207" duration="16460000" />
+      <workItem from="1712145897207" duration="18695000" />
+      <workItem from="1712214203000" duration="4565000" />
     </task>
     <task id="LOCAL-00001" summary="trying some things">
       <option name="closed" value="true" />
@@ -88,7 +96,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712166131042</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixed PlayerInfo Label">
+      <option name="closed" value="true" />
+      <created>1712167135762</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712167135762</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,7 +122,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="trying some things" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying some things" />
+    <MESSAGE value="fixed PlayerInfo Label" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed PlayerInfo Label" />
   </component>
 </project>

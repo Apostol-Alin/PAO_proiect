@@ -29,7 +29,6 @@ public class CookieButton extends JButton{
                 Player p = game_service.getPlayer();
                 p.update_cookies(p.get_clicker().get_cookies_per_click());
                 game_service.getPlayerInfo().setText("<html>" + p.toString().replaceAll("\n", "<br/>") + "</html>");
-                //System.out.println(p.toString());
             }
         });
     }

@@ -9,12 +9,13 @@ import java.awt.event.ActionListener;
 
 public class game_service {
     private Player player;
-    private JFrame MainFrame = null;
-    private JLabel PlayerInfo = null;
+    private JFrame MainFrame;
+    private JLabel PlayerInfo;
+    private JPanel PlayerPanel;
     Timer timer;
     public game_service(Player p){
         this.player = p;
-        this.createGUI();
+        this.setUpMainFrame();
     }
     public Player getPlayer(){return this.player;}
     public JFrame getMainFrame(){return this.MainFrame;}
@@ -23,40 +24,47 @@ public class game_service {
         //Create main frame
         MainFrame = new JFrame("Cookie clicker");
         MainFrame.setSize(1000,1000);
-        MainFrame.setFont(new Font("Comic Sans MS", Font.BOLD, 32));
         MainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         MainFrame.setLocationRelativeTo(null);
+        MainFrame.setLayout(new BorderLayout());
         MainFrame.getContentPane().setBackground(Color.darkGray);
     }
-    private void createGUI(){
-        setUpMainFrame();
+    private void setUpPlayerPanel(){
         //Create panel that consists of Player info and cookie clicker
-        JPanel playerPanel = new JPanel();
-        playerPanel.setLayout(new FlowLayout(FlowLayout.LEFT, 10, 5));
-        playerPanel.setBackground(Color.RED);
+        PlayerPanel = new JPanel();
+        PlayerPanel.setLayout(new FlowLayout(FlowLayout.LEFT, 10, 5));
+        PlayerPanel.setBackground(Color.RED);
         //need html to display \n...
         ImageIcon cook = new ImageIcon(Player.get_pic());
         Image cookimg = cook.getImage().getScaledInstance(50,50, Image.SCALE_SMOOTH);
         cook = new ImageIcon(cookimg);
         JLabel playerIcon = new JLabel(cook);
         playerIcon.setBounds(0, 0, 200, 50);
-        playerPanel.add(playerIcon);
+        PlayerPanel.add(playerIcon);
 
         PlayerInfo = new JLabel("<html>" + player.toString().replaceAll("\n", "<br/>") + "</html>");
         PlayerInfo.setBounds(0, 0, 200, 50);
-        playerPanel.add(PlayerInfo);
+        PlayerInfo.setFont(new Font("Comic Sans MS", Font.BOLD, 25));
+        PlayerPanel.add(PlayerInfo);
 
         //Create the button for the cookie clicker
         JButton cookie_button = new CookieButton(this);
 
         //Add it to the playerPanel
-        playerPanel.add(cookie_button);
+        PlayerPanel.add(cookie_button);
         //Set size of the playerPanel
-        playerPanel.setSize(new Dimension(50,50));
+        PlayerPanel.setSize(new Dimension(50,50));
+    }
+    private void createGUI(){
+        setUpMainFrame();
+        setUpPlayerPanel();
 
         //Add the playerPanel to the main frame
-        MainFrame.add(playerPanel, BorderLayout.NORTH);
+        MainFrame.add(PlayerPanel, BorderLayout.NORTH);
         MainFrame.setVisible(true);
+    }
+    public void run(){
+        this.createGUI();
     }
 
 }
