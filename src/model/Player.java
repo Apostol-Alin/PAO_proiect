@@ -1,9 +1,13 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.Hashtable;
+
 public final class Player {
     private final String name;
     private long cookies;
     private CookieClicker clicker;
+    private Hashtable<CookieMaker, Integer> cookieMakers;
     private final static String pic = "pictures/player.jpg";
     private static Player player_instance = null;
     private Player(String name, long cookies, CookieClicker cookieClickerInstance) throws Exception {
@@ -11,8 +15,17 @@ public final class Player {
             throw new Exception("Invalid number of cookies!");
         this.name = name;
         this.cookies = cookies;
-        clicker = cookieClickerInstance;
+        this.clicker = cookieClickerInstance;
+        this.cookieMakers = new Hashtable<CookieMaker, Integer>();
     }
+    public void addCookieMaker(CookieMaker c){
+        cookieMakers.merge(c, 1, Integer::sum);
+        //System.out.println(cookieMakers.get(c));
+    }
+    public int getHowManyCookieMaker(CookieMaker c){
+        return cookieMakers.get(c);
+    }
+
     public static Player getInstance(String name, long cookies, CookieClicker clicker) throws Exception {
         if(player_instance == null) {
             if(clicker == null)
@@ -33,12 +46,17 @@ public final class Player {
         return "Name: " + player_instance.name + "\nCookies: " + player_instance.cookies;
     }
     public boolean update_cookies(long ammount){
-        if(player_instance.cookies < ammount)
-            return false;
-        else{
-            player_instance.cookies += ammount;
-            return true;
+        if(ammount < 0){
+            if(this.cookies < ammount)
+                return false;
+            else
+                this.cookies += ammount;
         }
+        else{
+            this.cookies += ammount;
+        }
+        return true;
+
     }
     public CookieClicker get_clicker(){
         return clicker;

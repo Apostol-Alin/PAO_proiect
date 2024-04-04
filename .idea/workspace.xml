@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd01cc40-5592-48cf-a4d3-ddcef39cc0ad" name="Changes" comment="fixed PlayerInfo Label">
-      <change afterPath="$PROJECT_DIR$/pictures/cursor.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/CookieMaker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Cursor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Grandma.java" afterDir="false" />
+    <list default="true" id="bd01cc40-5592-48cf-a4d3-ddcef39cc0ad" name="Changes" comment="Added CookieMaker and subclasses. Also clean-up">
+      <change afterPath="$PROJECT_DIR$/src/Buttons/BuyCookieMaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repositories/CookieMakerRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Buttons/CookieButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Buttons/CookieButton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game_service/game_service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_service/game_service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/CookieMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CookieMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Cursor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Cursor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Grandma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Grandma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,23 +49,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Etapa-1",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Facultate_an_II/SEM2/PAO/PAO_proiect/pictures",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Etapa-1&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Facultate_an_II/SEM2/PAO/PAO_proiect/pictures&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Facultate_an_II\SEM2\PAO\PAO_proiect\pictures" />
@@ -86,7 +87,8 @@
       <option name="presentableId" value="Default" />
       <updated>1712145896111</updated>
       <workItem from="1712145897207" duration="18695000" />
-      <workItem from="1712214203000" duration="4565000" />
+      <workItem from="1712214203000" duration="5837000" />
+      <workItem from="1712228552719" duration="5311000" />
     </task>
     <task id="LOCAL-00001" summary="trying some things">
       <option name="closed" value="true" />
@@ -104,7 +106,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712167135762</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added CookieMaker and subclasses. Also clean-up">
+      <option name="closed" value="true" />
+      <created>1712220308652</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712220308652</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +135,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="trying some things" />
     <MESSAGE value="fixed PlayerInfo Label" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed PlayerInfo Label" />
+    <MESSAGE value="Added CookieMaker and subclasses. Also clean-up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added CookieMaker and subclasses. Also clean-up" />
   </component>
 </project>

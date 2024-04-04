@@ -1,25 +1,39 @@
 package game_service;
+import Buttons.BuyCookieMaker;
 import Buttons.CookieButton;
+import Repositories.CookieMakerRepository;
 import model.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 
 
 public class game_service {
     private Player player;
+    private ArrayList<CookieMaker> CookieMakers;
     private JFrame MainFrame;
     private JLabel PlayerInfo;
     private JPanel PlayerPanel;
+    private JPanel ShopPanel;
     Timer timer;
     public game_service(Player p){
         this.player = p;
+        try{
+            this.CookieMakers = CookieMakerRepository.retCookieMakersList();
+        } catch (Exception e) {
+            System.out.println("Eroare la crearea de Cookie Makers!!!!");
+        }
         this.setUpMainFrame();
     }
     public Player getPlayer(){return this.player;}
     public JFrame getMainFrame(){return this.MainFrame;}
     public JLabel getPlayerInfo(){return this.PlayerInfo;}
+    public JPanel getShopPanel(){return this.ShopPanel;}
+
     private void setUpMainFrame(){
         //Create main frame
         MainFrame = new JFrame("Cookie clicker");
@@ -55,12 +69,22 @@ public class game_service {
         //Set size of the playerPanel
         PlayerPanel.setSize(new Dimension(50,50));
     }
+    private void setUpShopPanel(){
+        ShopPanel = new JPanel();
+        ShopPanel.setLayout(new GridLayout(this.CookieMakers.size(), 1));
+        Collections.sort(this.CookieMakers);
+        for (CookieMaker cookieMaker : this.CookieMakers) {
+            BuyCookieMaker button = new BuyCookieMaker(this, cookieMaker);
+            ShopPanel.add(button);
+        }
+    }
     private void createGUI(){
         setUpMainFrame();
         setUpPlayerPanel();
-
+        setUpShopPanel();
         //Add the playerPanel to the main frame
         MainFrame.add(PlayerPanel, BorderLayout.NORTH);
+        MainFrame.add(ShopPanel, BorderLayout.CENTER);
         MainFrame.setVisible(true);
     }
     public void run(){
