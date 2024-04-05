@@ -10,8 +10,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class BuyCookieMaker extends JButton {
-    CookieMaker c;
-    public BuyCookieMaker(game_service game_service, CookieMaker c){
+    private CookieMaker c;
+    private boolean firstTimePressed = true;
+    public BuyCookieMaker(game_service game_service, CookieMaker c, int label_index){
+        this.setBorder(null);
+        this.setBorderPainted(false);
+        this.setContentAreaFilled(false);
+        this.setOpaque(false);
         //set cookie image background
         ImageIcon mkr = new ImageIcon(c.getImg_path());
         Image image = mkr.getImage().getScaledInstance(100,100, Image.SCALE_SMOOTH);
@@ -26,6 +31,18 @@ public class BuyCookieMaker extends JButton {
                     p.update_cookies(-c.getCost());
                     p.addCookieMaker(c);
                     game_service.getPlayerInfo().setText("<html>" + p.toString().replaceAll("\n", "<br/>") + "</html>");
+                    JLabel associated_label = game_service.getCookieMakerLabel_at(label_index);
+                    String z;
+                    try{
+                        z = String.valueOf(p.getHowManyCookieMaker(c));
+                    }catch (Exception ex){
+                        z = "0";
+                    }
+                    if(firstTimePressed){
+                        c.setTimer(p, game_service.getPlayerInfo());
+                        firstTimePressed = false;
+                    }
+                    associated_label.setText("<html>" + c.toString().replaceAll("\n", "<br/>") + "<br/> You have: " + z + "</html>" );
                 }
             }
         });

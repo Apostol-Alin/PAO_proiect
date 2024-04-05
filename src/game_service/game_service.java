@@ -15,6 +15,7 @@ import java.util.Collections;
 public class game_service {
     private Player player;
     private ArrayList<CookieMaker> CookieMakers;
+    private JLabel CookieMakersLabels[];
     private JFrame MainFrame;
     private JLabel PlayerInfo;
     private JPanel PlayerPanel;
@@ -24,6 +25,10 @@ public class game_service {
         this.player = p;
         try{
             this.CookieMakers = CookieMakerRepository.retCookieMakersList();
+            this.CookieMakersLabels = new JLabel[this.CookieMakers.size()];
+            for(int i = 0; i < this.CookieMakers.size(); i++) {
+                this.CookieMakersLabels[i] = new JLabel();
+            }
         } catch (Exception e) {
             System.out.println("Eroare la crearea de Cookie Makers!!!!");
         }
@@ -47,7 +52,7 @@ public class game_service {
         //Create panel that consists of Player info and cookie clicker
         PlayerPanel = new JPanel();
         PlayerPanel.setLayout(new FlowLayout(FlowLayout.LEFT, 10, 5));
-        PlayerPanel.setBackground(Color.RED);
+        PlayerPanel.setBackground(Color.DARK_GRAY);
         //need html to display \n...
         ImageIcon cook = new ImageIcon(Player.get_pic());
         Image cookimg = cook.getImage().getScaledInstance(50,50, Image.SCALE_SMOOTH);
@@ -59,6 +64,7 @@ public class game_service {
         PlayerInfo = new JLabel("<html>" + player.toString().replaceAll("\n", "<br/>") + "</html>");
         PlayerInfo.setBounds(0, 0, 200, 50);
         PlayerInfo.setFont(new Font("Comic Sans MS", Font.BOLD, 25));
+        PlayerInfo.setForeground(Color.WHITE);
         PlayerPanel.add(PlayerInfo);
 
         //Create the button for the cookie clicker
@@ -71,12 +77,36 @@ public class game_service {
     }
     private void setUpShopPanel(){
         ShopPanel = new JPanel();
-        ShopPanel.setLayout(new GridLayout(this.CookieMakers.size(), 1));
+        GridBagLayout gridBagLayout = new GridBagLayout();
+        GridBagConstraints gridBagConstraints = new GridBagConstraints();
+        ShopPanel.setLayout(gridBagLayout);
+        gridBagConstraints.fill = GridBagConstraints.NONE;
+        ShopPanel.setBackground(Color.darkGray);
         Collections.sort(this.CookieMakers);
-        for (CookieMaker cookieMaker : this.CookieMakers) {
-            BuyCookieMaker button = new BuyCookieMaker(this, cookieMaker);
-            ShopPanel.add(button);
+
+        for (int i = 0; i < this.CookieMakers.size(); i++) {
+            BuyCookieMaker button = new BuyCookieMaker(this, this.CookieMakers.get(i), i);
+            String z;
+            try{
+                z = String.valueOf(player.getHowManyCookieMaker(this.CookieMakers.get(i)));
+            }catch (Exception ex){
+                z = "0";
+            }
+            this.CookieMakersLabels[i].setForeground(Color.WHITE);
+            this.CookieMakersLabels[i].setFont(new Font("Comic Sans MS", Font.BOLD, 20));
+            this.CookieMakersLabels[i].setText("<html>" + this.CookieMakers.get(i).toString().replaceAll("\n", "<br/>") + "<br/> You have: " + z + "</html>" );
+            gridBagConstraints.gridx = i;
+            gridBagConstraints.gridy = 0;
+            gridBagConstraints.insets = new Insets(5, 5, 5, 15);
+            ShopPanel.add(button, gridBagConstraints);
+
+            gridBagConstraints.gridy = 1;
+            ShopPanel.add(this.CookieMakersLabels[i], gridBagConstraints);
+
         }
+    }
+    public JLabel getCookieMakerLabel_at(int index){
+        return this.CookieMakersLabels[index];
     }
     private void createGUI(){
         setUpMainFrame();

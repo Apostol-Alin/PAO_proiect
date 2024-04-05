@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd01cc40-5592-48cf-a4d3-ddcef39cc0ad" name="Changes" comment="Added CookieMaker and subclasses. Also clean-up">
-      <change afterPath="$PROJECT_DIR$/src/Buttons/BuyCookieMaker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repositories/CookieMakerRepository.java" afterDir="false" />
+    <list default="true" id="bd01cc40-5592-48cf-a4d3-ddcef39cc0ad" name="Changes" comment="Added cookie makers buying">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/cursor.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/pictures/cursor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/grandma.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/pictures/grandma.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/player.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/pictures/player.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Buttons/BuyCookieMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Buttons/BuyCookieMaker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repositories/CookieMakerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repositories/CookieMakerRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game_service/game_service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_service/game_service.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/CookieMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CookieMaker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Cursor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Cursor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Grandma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Grandma.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +39,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -88,7 +93,10 @@
       <updated>1712145896111</updated>
       <workItem from="1712145897207" duration="18695000" />
       <workItem from="1712214203000" duration="5837000" />
-      <workItem from="1712228552719" duration="5311000" />
+      <workItem from="1712228552719" duration="7282000" />
+      <workItem from="1712242559827" duration="327000" />
+      <workItem from="1712246740268" duration="818000" />
+      <workItem from="1712326581132" duration="4547000" />
     </task>
     <task id="LOCAL-00001" summary="trying some things">
       <option name="closed" value="true" />
@@ -114,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712220308652</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added cookie makers buying">
+      <option name="closed" value="true" />
+      <created>1712234353701</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712234353701</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +152,7 @@
     <MESSAGE value="trying some things" />
     <MESSAGE value="fixed PlayerInfo Label" />
     <MESSAGE value="Added CookieMaker and subclasses. Also clean-up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added CookieMaker and subclasses. Also clean-up" />
+    <MESSAGE value="Added cookie makers buying" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added cookie makers buying" />
   </component>
 </project>

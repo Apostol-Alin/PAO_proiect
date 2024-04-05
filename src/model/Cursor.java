@@ -9,7 +9,7 @@ public class Cursor extends CookieMaker{
 
     @Override
     public void bonus(Player p) {
-        p.update_cookies(p.get_cookies() + 1);
+        p.update_cookies(1);
         //when bought, it gives a player a bonus cookie :)
     }
     public Cursor(Cursor c){

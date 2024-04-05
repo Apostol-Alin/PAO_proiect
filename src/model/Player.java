@@ -8,7 +8,7 @@ public final class Player {
     private long cookies;
     private CookieClicker clicker;
     private Hashtable<CookieMaker, Integer> cookieMakers;
-    private final static String pic = "pictures/player.jpg";
+    private final static String pic = "pictures/player.png";
     private static Player player_instance = null;
     private Player(String name, long cookies, CookieClicker cookieClickerInstance) throws Exception {
         if(cookies < 0)
@@ -22,8 +22,11 @@ public final class Player {
         cookieMakers.merge(c, 1, Integer::sum);
         //System.out.println(cookieMakers.get(c));
     }
-    public int getHowManyCookieMaker(CookieMaker c){
-        return cookieMakers.get(c);
+    public int getHowManyCookieMaker(CookieMaker c) throws Exception{
+        if(this.cookieMakers.get(c) == null)
+            throw new Exception("None");
+        else
+            return this.cookieMakers.get(c);
     }
 
     public static Player getInstance(String name, long cookies, CookieClicker clicker) throws Exception {

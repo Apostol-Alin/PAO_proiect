@@ -1,5 +1,6 @@
 package model;
 
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Objects;
@@ -9,6 +10,7 @@ public abstract class CookieMaker implements Comparable<CookieMaker>{
     private long ammount; // cookies
     private final long cost;
     private String img_path;
+    javax.swing.Timer timer;
     public CookieMaker(double time_to_wait, long ammount, long cost, String img_path) throws Exception{
         if(time_to_wait <= 0 || ammount <= 0)
             throw new Exception("Invalid parameters for cookie maker");
@@ -16,6 +18,22 @@ public abstract class CookieMaker implements Comparable<CookieMaker>{
         this.ammount = ammount;
         this.cost = cost;
         this.img_path = img_path;
+    }
+    public void setTimer(Player p, JLabel l){
+        long h = this.ammount;
+        this.timer = new Timer((int) (this.time_to_wait * 1000), new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    p.update_cookies(p.getHowManyCookieMaker(CookieMaker.this) * h);
+                    l.setText("<html>" + p.toString().replaceAll("\n", "<br/>") + "</html>");
+                    //System.out.println("TIMER");
+                } catch (Exception ex) {
+                    System.out.println("Eroare, nu s-a gasit cookieMakerul!");
+                }
+            }
+        });
+        this.timer.start();
     }
     @Override
     public int hashCode(){
@@ -48,5 +66,9 @@ public abstract class CookieMaker implements Comparable<CookieMaker>{
     @Override
     public int compareTo(CookieMaker ob){
         return Long.compare(ammount, ob.ammount);
+    }
+    @Override
+    public String toString(){
+        return this.getClass().getName().replaceAll("model.", "") + "\nCost: " + this.cost + "\n Cookies: " + this.ammount + "\n Seconds: " + this.time_to_wait;
     }
 }
