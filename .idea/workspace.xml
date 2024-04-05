@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd01cc40-5592-48cf-a4d3-ddcef39cc0ad" name="Changes" comment="BASIC FUNCTIONALITIES">
-      <change afterPath="$PROJECT_DIR$/pictures/background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/cursor.png" beforeDir="false" afterPath="$PROJECT_DIR$/pictures/cursor.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repositories/CookieMakerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repositories/CookieMakerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game_service/game_service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_service/game_service.java" afterDir="false" />
-    </list>
+    <list default="true" id="bd01cc40-5592-48cf-a4d3-ddcef39cc0ad" name="Changes" comment="Modified game background and updated README" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +84,7 @@
       <workItem from="1712228552719" duration="7282000" />
       <workItem from="1712242559827" duration="327000" />
       <workItem from="1712246740268" duration="818000" />
-      <workItem from="1712326581132" duration="8499000" />
+      <workItem from="1712326581132" duration="8909000" />
     </task>
     <task id="LOCAL-00001" summary="trying some things">
       <option name="closed" value="true" />
@@ -134,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712331429409</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Modified game background and updated README">
+      <option name="closed" value="true" />
+      <created>1712349485733</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712349485733</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +158,7 @@
     <MESSAGE value="Added CookieMaker and subclasses. Also clean-up" />
     <MESSAGE value="Added cookie makers buying" />
     <MESSAGE value="BASIC FUNCTIONALITIES" />
-    <option name="LAST_COMMIT_MESSAGE" value="BASIC FUNCTIONALITIES" />
+    <MESSAGE value="Modified game background and updated README" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified game background and updated README" />
   </component>
 </project>
