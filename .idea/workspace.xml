@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd01cc40-5592-48cf-a4d3-ddcef39cc0ad" name="Changes" comment="Added cookie makers buying">
+    <list default="true" id="bd01cc40-5592-48cf-a4d3-ddcef39cc0ad" name="Changes" comment="BASIC FUNCTIONALITIES">
+      <change afterPath="$PROJECT_DIR$/pictures/background.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/cursor.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/pictures/cursor.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/grandma.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/pictures/grandma.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/player.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/pictures/player.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Buttons/BuyCookieMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Buttons/BuyCookieMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/cursor.png" beforeDir="false" afterPath="$PROJECT_DIR$/pictures/cursor.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repositories/CookieMakerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repositories/CookieMakerRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game_service/game_service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_service/game_service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/CookieMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CookieMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Cursor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Cursor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +92,7 @@
       <workItem from="1712228552719" duration="7282000" />
       <workItem from="1712242559827" duration="327000" />
       <workItem from="1712246740268" duration="818000" />
-      <workItem from="1712326581132" duration="4547000" />
+      <workItem from="1712326581132" duration="8499000" />
     </task>
     <task id="LOCAL-00001" summary="trying some things">
       <option name="closed" value="true" />
@@ -130,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712234353701</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="BASIC FUNCTIONALITIES">
+      <option name="closed" value="true" />
+      <created>1712331429409</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712331429409</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +157,7 @@
     <MESSAGE value="fixed PlayerInfo Label" />
     <MESSAGE value="Added CookieMaker and subclasses. Also clean-up" />
     <MESSAGE value="Added cookie makers buying" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added cookie makers buying" />
+    <MESSAGE value="BASIC FUNCTIONALITIES" />
+    <option name="LAST_COMMIT_MESSAGE" value="BASIC FUNCTIONALITIES" />
   </component>
 </project>

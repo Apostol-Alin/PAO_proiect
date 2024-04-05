@@ -52,7 +52,7 @@ public class game_service {
         //Create panel that consists of Player info and cookie clicker
         PlayerPanel = new JPanel();
         PlayerPanel.setLayout(new FlowLayout(FlowLayout.LEFT, 10, 5));
-        PlayerPanel.setBackground(Color.DARK_GRAY);
+        PlayerPanel.setBackground(Color.BLACK);
         //need html to display \n...
         ImageIcon cook = new ImageIcon(Player.get_pic());
         Image cookimg = cook.getImage().getScaledInstance(50,50, Image.SCALE_SMOOTH);
@@ -76,7 +76,15 @@ public class game_service {
         PlayerPanel.setSize(new Dimension(50,50));
     }
     private void setUpShopPanel(){
-        ShopPanel = new JPanel();
+        ImageIcon background = new ImageIcon("pictures/background.png");
+        Image bckg = background.getImage();
+        ShopPanel = new JPanel(){
+            @Override
+            protected void paintComponent(Graphics g){
+                super.paintComponent(g);
+                g.drawImage(bckg, 0, 0, null);
+            }
+        };
         GridBagLayout gridBagLayout = new GridBagLayout();
         GridBagConstraints gridBagConstraints = new GridBagConstraints();
         ShopPanel.setLayout(gridBagLayout);

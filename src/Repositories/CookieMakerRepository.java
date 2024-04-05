@@ -8,9 +8,9 @@ import java.util.ArrayList;
 public class CookieMakerRepository {
     public static ArrayList<CookieMaker> retCookieMakersList() throws Exception {
         ArrayList<CookieMaker> lista = new ArrayList<CookieMaker>();
-        Cursor c = new Cursor(10, 1, 100, "pictures/cursor.png");
+        Cursor c = new Cursor(1, 1, 100, "pictures/cursor.png");
         lista.add(c);
-        Grandma g = new Grandma(20, 5, 500, "pictures/grandma.png");
+        Grandma g = new Grandma(2, 5, 500, "pictures/grandma.png");
         lista.add(g);
         return lista;
     }
