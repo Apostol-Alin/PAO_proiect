@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd01cc40-5592-48cf-a4d3-ddcef39cc0ad" name="Changes" comment="Modified game background and updated README" />
+    <list default="true" id="bd01cc40-5592-48cf-a4d3-ddcef39cc0ad" name="Changes" comment="readme?">
+      <change afterPath="$PROJECT_DIR$/src/ProgressBars/CookieMakerProgressBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Buttons/BuyCookieMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Buttons/BuyCookieMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repositories/CookieMakerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repositories/CookieMakerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game_service/game_service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_service/game_service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/CookieClicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CookieClicker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/CookieMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CookieMaker.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +92,9 @@
       <workItem from="1712228552719" duration="7282000" />
       <workItem from="1712242559827" duration="327000" />
       <workItem from="1712246740268" duration="818000" />
-      <workItem from="1712326581132" duration="8909000" />
+      <workItem from="1712326581132" duration="9928000" />
+      <workItem from="1712387242043" duration="858000" />
+      <workItem from="1712392827685" duration="9747000" />
     </task>
     <task id="LOCAL-00001" summary="trying some things">
       <option name="closed" value="true" />
@@ -134,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712349485733</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="readme?">
+      <option name="closed" value="true" />
+      <created>1712349680868</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712349680868</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +177,7 @@
     <MESSAGE value="Added cookie makers buying" />
     <MESSAGE value="BASIC FUNCTIONALITIES" />
     <MESSAGE value="Modified game background and updated README" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified game background and updated README" />
+    <MESSAGE value="readme?" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme?" />
   </component>
 </project>

@@ -5,17 +5,16 @@ import Repositories.CookieMakerRepository;
 import model.*;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
+import ProgressBars.*;
 
 
 public class game_service {
-    private Player player;
+    private final Player player;
     private ArrayList<CookieMaker> CookieMakers;
-    private JLabel CookieMakersLabels[];
+    private JLabel[] CookieMakersLabels;
+    private CookieMakerProgressBar[] CookieMakersProgressBars;
     private JFrame MainFrame;
     private JLabel PlayerInfo;
     private JPanel PlayerPanel;
@@ -26,8 +25,12 @@ public class game_service {
         try{
             this.CookieMakers = CookieMakerRepository.retCookieMakersList();
             this.CookieMakersLabels = new JLabel[this.CookieMakers.size()];
+            this.CookieMakersProgressBars = new CookieMakerProgressBar[this.CookieMakers.size()];
             for(int i = 0; i < this.CookieMakers.size(); i++) {
                 this.CookieMakersLabels[i] = new JLabel();
+            }
+            for(int i = 0; i < this.CookieMakers.size(); i++) {
+                this.CookieMakersProgressBars[i] = new CookieMakerProgressBar((int)this.CookieMakers.get(i).getTime_to_wait());
             }
         } catch (Exception e) {
             System.out.println("Eroare la crearea de Cookie Makers!!!!");
@@ -89,7 +92,6 @@ public class game_service {
         GridBagConstraints gridBagConstraints = new GridBagConstraints();
         ShopPanel.setLayout(gridBagLayout);
         gridBagConstraints.fill = GridBagConstraints.NONE;
-        ShopPanel.setBackground(Color.darkGray);
         Collections.sort(this.CookieMakers);
 
         for (int i = 0; i < this.CookieMakers.size(); i++) {
@@ -111,10 +113,19 @@ public class game_service {
             gridBagConstraints.gridy = 1;
             ShopPanel.add(this.CookieMakersLabels[i], gridBagConstraints);
 
+            gridBagConstraints.gridy = 2;
+            ShopPanel.add(this.CookieMakersProgressBars[i], gridBagConstraints);
+
         }
     }
     public JLabel getCookieMakerLabel_at(int index){
         return this.CookieMakersLabels[index];
+    }
+    public CookieMakerProgressBar getCookieMakerPorgressBar_at(int index){
+        return this.CookieMakersProgressBars[index];
+    }
+    public CookieMaker getCookieMaker_at(int index){
+        return this.CookieMakers.get(index);
     }
     private void createGUI(){
         setUpMainFrame();
@@ -122,6 +133,7 @@ public class game_service {
         setUpShopPanel();
         //Add the playerPanel to the main frame
         MainFrame.add(PlayerPanel, BorderLayout.NORTH);
+        //Add the ShopPanel to the main frame
         MainFrame.add(ShopPanel, BorderLayout.CENTER);
         MainFrame.setVisible(true);
     }

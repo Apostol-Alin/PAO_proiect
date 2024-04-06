@@ -9,7 +9,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class BuyCookieMaker extends JButton {
+public final class BuyCookieMaker extends JButton {
     private CookieMaker c;
     private boolean firstTimePressed = true;
     public BuyCookieMaker(game_service game_service, CookieMaker c, int label_index){
@@ -39,7 +39,8 @@ public class BuyCookieMaker extends JButton {
                         z = "0";
                     }
                     if(firstTimePressed){
-                        c.setTimer(p, game_service.getPlayerInfo());
+                        game_service.getCookieMakerPorgressBar_at(label_index).setVisible(true); // Make the cooking time progress bar visible
+                        c.setTimer(p, game_service.getPlayerInfo(), game_service.getCookieMakerPorgressBar_at(label_index)); //Set up and start the timer for cooking the Cookies
                         firstTimePressed = false;
                     }
                     associated_label.setText("<html>" + c.toString().replaceAll("\n", "<br/>") + "<br/> You have: " + z + "</html>" );

@@ -1,6 +1,6 @@
 package model;
 
-public class CookieClicker {
+public final class CookieClicker {
     private long cookies_per_click;
     private static CookieClicker CookieClicker_instance = null;
     private CookieClicker(long cookies_per_click) throws Exception {
