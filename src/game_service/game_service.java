@@ -1,4 +1,5 @@
 package game_service;
+import Buttons.AchievementButton;
 import Buttons.BuyCookieMaker;
 import Buttons.CookieButton;
 import Repositories.CookieMakerRepository;
@@ -17,6 +18,9 @@ public class game_service {
     private JLabel[] CookieMakerBonusLabels;
     private CookieMakerProgressBar[] CookieMakersProgressBars;
     private JFrame MainFrame;
+    private JFrame AchievementFrame;
+    private JPanel AchievementsPanel;
+    private JLabel AchievementsLabel;
     private JLabel PlayerInfo;
     private JPanel PlayerPanel;
     private JPanel ShopPanel;
@@ -42,6 +46,25 @@ public class game_service {
     public JLabel getPlayerInfo(){return this.PlayerInfo;}
     public JPanel getShopPanel(){return this.ShopPanel;}
 
+    private void setUpAchievementFrame(){
+        //Create achievement frame
+        AchievementFrame = new JFrame("Your Achievements");
+        AchievementFrame.setSize(500,500);
+        AchievementFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        AchievementFrame.setLocationRelativeTo(null);
+        AchievementFrame.setLayout(new BorderLayout());
+        AchievementFrame.getContentPane().setBackground(Color.darkGray);
+        ImageIcon background = new ImageIcon("pictures/background.png");
+        Image bckg = background.getImage();
+        AchievementsPanel = new JPanel(){
+            @Override
+            protected void paintComponent(Graphics g){
+                super.paintComponent(g);
+                g.drawImage(bckg, 0, 0, null);
+            }
+        };
+        AchievementFrame.add(AchievementsPanel);
+    }
     private void setUpMainFrame(){
         //Create main frame
         MainFrame = new JFrame("Cookie clicker");
@@ -71,6 +94,11 @@ public class game_service {
         //Create the button for the cookie clicker
         JButton cookie_button = new CookieButton(this);
         PlayerPanel.add(cookie_button);
+
+        //Create the button for the achievement frame
+        AchievementButton achievementButton = new AchievementButton(AchievementFrame);
+        PlayerPanel.add(achievementButton);
+
     }
     private void setUpShopPanel(){
         ImageIcon background = new ImageIcon("pictures/background.png");
@@ -133,6 +161,7 @@ public class game_service {
     }
     private void createGUI(){
         setUpMainFrame();
+        setUpAchievementFrame();
         setUpPlayerPanel();
         setUpShopPanel();
         //Add the playerPanel to the main frame

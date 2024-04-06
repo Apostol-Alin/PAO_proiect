@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd01cc40-5592-48cf-a4d3-ddcef39cc0ad" name="Changes" comment="readme????">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/achievement_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/grandma.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Buttons/AchievementButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repositories/AchievementRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Achievement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/grandma.png" beforeDir="false" afterPath="$PROJECT_DIR$/pictures/grandma.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game_service/game_service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_service/game_service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +99,8 @@
       <workItem from="1712326581132" duration="9928000" />
       <workItem from="1712387242043" duration="858000" />
       <workItem from="1712392827685" duration="9747000" />
+      <workItem from="1712425574549" duration="690000" />
+      <workItem from="1712429739852" duration="3002000" />
     </task>
     <task id="LOCAL-00001" summary="trying some things">
       <option name="closed" value="true" />
@@ -171,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712422077615</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="readme????">
+      <option name="closed" value="true" />
+      <created>1712422106588</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1712422106588</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

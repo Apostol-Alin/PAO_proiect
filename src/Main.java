@@ -1,9 +1,11 @@
+import Repositories.AchievementRepository;
 import model.*;
 import game_service.*;
 public class Main {
     public static void main(String[] args){
         try {
             Player alin = Player.getInstance("Alin", 1000, null);
+            alin.addAchievement(AchievementRepository.retAchievementList());
             game_service game = new game_service(alin);
             game.run();
         }
