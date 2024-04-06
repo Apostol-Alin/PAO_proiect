@@ -77,6 +77,7 @@ public abstract class CookieMaker implements Comparable<CookieMaker>{
             this.time_to_wait = t;
         }
     }
+    public abstract String describeBonus();
     public final String getImg_path(){return this.img_path;}
     public abstract void bonus(Player p);
     @Override

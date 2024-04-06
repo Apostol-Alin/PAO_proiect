@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd01cc40-5592-48cf-a4d3-ddcef39cc0ad" name="Changes" comment="readme?">
-      <change afterPath="$PROJECT_DIR$/src/ProgressBars/CookieMakerProgressBar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Buttons/BuyCookieMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Buttons/BuyCookieMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Buttons/CookieButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Buttons/CookieButton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repositories/CookieMakerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repositories/CookieMakerRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game_service/game_service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_service/game_service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/CookieClicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CookieClicker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/CookieMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CookieMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Cursor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Cursor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Grandma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Grandma.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +33,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />

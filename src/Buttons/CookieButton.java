@@ -9,7 +9,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
-public class CookieButton extends JButton{
+public final class CookieButton extends JButton{
 
     public CookieButton(game_service game_service) {
         //set cookie image background

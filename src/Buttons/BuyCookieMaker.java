@@ -1,6 +1,8 @@
 package Buttons;
 
 import javax.swing.*;
+import javax.swing.event.MouseInputListener;
+
 import game_service.*;
 import model.CookieMaker;
 import model.Player;
@@ -8,6 +10,8 @@ import model.Player;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 public final class BuyCookieMaker extends JButton {
     private CookieMaker c;
@@ -23,6 +27,9 @@ public final class BuyCookieMaker extends JButton {
         mkr = new ImageIcon(image);
         this.setIcon(mkr);
         this.c = c;
+        this.events(game_service, label_index);
+    }
+    private void events(game_service game_service, int label_index){
         this.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -45,6 +52,33 @@ public final class BuyCookieMaker extends JButton {
                     }
                     associated_label.setText("<html>" + c.toString().replaceAll("\n", "<br/>") + "<br/> You have: " + z + "</html>" );
                 }
+            }
+        });
+        this.addMouseListener(new MouseListener() {
+
+            @Override
+            public void mouseClicked(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                game_service.getCookieMakerBonusLabel_at(label_index).setVisible(true);
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                game_service.getCookieMakerBonusLabel_at(label_index).setVisible(false);
             }
         });
     }

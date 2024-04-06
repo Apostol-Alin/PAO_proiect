@@ -8,6 +8,10 @@ public class Cursor extends CookieMaker{
     }
 
     @Override
+    public final String describeBonus(){
+        return "It gives you a bonus cookie :D";
+    }
+    @Override
     public void bonus(Player p) {
         p.update_cookies(1);
         //when bought, it gives a player a bonus cookie :)
