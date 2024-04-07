@@ -5,6 +5,8 @@ import javax.swing.event.MouseInputListener;
 
 import game_service.*;
 import model.CookieMaker;
+import model.Cursor;
+import model.Grandma;
 import model.Player;
 
 import java.awt.*;
@@ -45,6 +47,28 @@ public final class BuyCookieMaker extends JButton {
                     }catch (Exception ex){
                         z = "0";
                     }
+                    String text = new String("<html>");
+                    for(var ach : p.getAchievements()){
+                        switch (ach.getName()){
+                            case "Click that!":
+                                if(c.getClass() == Cursor.class && Integer.parseInt(z) == 10){
+                                    ach.setAchieved(true);
+                                }
+                                break;
+                            case "Who doesn't like grandma's cookies?":
+                                if(c.getClass() == Grandma.class && Integer.parseInt(z) == 5){
+                                    ach.setAchieved(true);
+                                }
+                                break;
+                            default:
+                                break;
+                        }
+                        if(ach.isAchieved()){
+                            text += ach.getName() + "<br/>"  + ach.getDescription() + "<br/><br/>";
+                        }
+                    }
+                    text += "</html>";
+                    game_service.getAchievementsLabel().setText(text);
                     if(firstTimePressed){
                         game_service.getCookieMakerPorgressBar_at(label_index).setVisible(true); // Make the cooking time progress bar visible
                         c.setTimer(p, game_service.getPlayerInfo(), game_service.getCookieMakerPorgressBar_at(label_index)); //Set up and start the timer for cooking the Cookies

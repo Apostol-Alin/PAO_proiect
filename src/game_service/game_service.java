@@ -44,8 +44,7 @@ public class game_service {
     public Player getPlayer(){return this.player;}
     public JFrame getMainFrame(){return this.MainFrame;}
     public JLabel getPlayerInfo(){return this.PlayerInfo;}
-    public JPanel getShopPanel(){return this.ShopPanel;}
-
+    public JLabel getAchievementsLabel(){return this.AchievementsLabel;}
     private void setUpAchievementFrame(){
         //Create achievement frame
         AchievementFrame = new JFrame("Your Achievements");
@@ -63,6 +62,12 @@ public class game_service {
                 g.drawImage(bckg, 0, 0, null);
             }
         };
+        AchievementsLabel = new JLabel();
+        AchievementsLabel.setForeground(Color.WHITE);
+        AchievementsLabel.setFont(new Font("Comic Sans MS", Font.BOLD, 20));
+        AchievementsLabel.setVisible(true);
+        AchievementsPanel.setVisible(true);
+        AchievementsPanel.add(AchievementsLabel, JLabel.CENTER);
         AchievementFrame.add(AchievementsPanel);
     }
     private void setUpMainFrame(){
