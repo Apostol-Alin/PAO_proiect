@@ -1,6 +1,14 @@
 import Repositories.AchievementRepository;
 import model.*;
 import game_service.*;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import oracle.jdbc.datasource.impl.OracleDataSource;
+
 public class Main {
     public static void main(String[] args){
         try {

@@ -16,8 +16,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public final class BuyCookieMaker extends JButton {
-    private CookieMaker c;
-    private boolean firstTimePressed = true;
+    private final CookieMaker c;
     public BuyCookieMaker(game_service game_service, CookieMaker c, int label_index){
         this.setBorder(null);
         this.setBorderPainted(false);
@@ -47,7 +46,7 @@ public final class BuyCookieMaker extends JButton {
                     }catch (Exception ex){
                         z = "0";
                     }
-                    String text = new String("<html>");
+                    String text = "<html>";
                     for(var ach : p.getAchievements()){
                         switch (ach.getName()){
                             case "Click that!":
@@ -69,10 +68,13 @@ public final class BuyCookieMaker extends JButton {
                     }
                     text += "</html>";
                     game_service.getAchievementsLabel().setText(text);
-                    if(firstTimePressed){
-                        game_service.getCookieMakerPorgressBar_at(label_index).setVisible(true); // Make the cooking time progress bar visible
-                        c.setTimer(p, game_service.getPlayerInfo(), game_service.getCookieMakerPorgressBar_at(label_index)); //Set up and start the timer for cooking the Cookies
-                        firstTimePressed = false;
+                    try {
+                        if(p.getHowManyCookieMaker(c) != 0){
+                            game_service.getCookieMakerPorgressBar_at(label_index).setVisible(true); // Make the cooking time progress bar visible
+                            c.setTimer(p, game_service.getPlayerInfo(), game_service.getCookieMakerPorgressBar_at(label_index)); //Set up and start the timer for cooking the Cookies
+                        }
+                    } catch (Exception ex) {
+                        throw new RuntimeException(ex);
                     }
                     associated_label.setText("<html>" + c.toString().replaceAll("\n", "<br/>") + "<br/> You have: " + z + "</html>" );
                 }
