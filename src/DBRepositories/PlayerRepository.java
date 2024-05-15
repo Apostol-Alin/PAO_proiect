@@ -51,6 +51,13 @@ public class PlayerRepository {
         rs.next();
         return rs.getInt("CookieClicker_id");
     }
+    public void deletePlayer(String name) throws Exception{
+        String query = "DELETE FROM PLAYERS WHERE NAME = ?";
+        PreparedStatement stmt = db.prepareStatement(query);
+        stmt.setString(1, name);
+        stmt.executeUpdate();
+        db.executeUpdate("COMMIT");
+    }
     public Player getFullPlayerByName(String name) throws Exception{
         String query = "SELECT * FROM PLAYERS WHERE Name = ?";
         PreparedStatement stmt = db.prepareStatement(query);

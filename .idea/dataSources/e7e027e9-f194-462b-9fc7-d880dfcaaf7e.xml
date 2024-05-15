@@ -9,13 +9,13 @@
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <CreatedTimestamp>2024-01-03.17:35:58</CreatedTimestamp>
       <Current>1</Current>
-      <LastIntrospectionL1Timestamp>2024-05-15.17:54:29</LastIntrospectionL1Timestamp>
-      <LastIntrospectionL2Timestamp>2024-05-15.17:54:29</LastIntrospectionL2Timestamp>
-      <LastIntrospectionL3Timestamp>2024-05-15.17:54:29</LastIntrospectionL3Timestamp>
+      <LastIntrospectionL1Timestamp>2024-05-15.19:25:46</LastIntrospectionL1Timestamp>
+      <LastIntrospectionL2Timestamp>2024-05-15.19:25:46</LastIntrospectionL2Timestamp>
+      <LastIntrospectionL3Timestamp>2024-05-15.19:25:46</LastIntrospectionL3Timestamp>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2024-05-15.11:54:30</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-05-15.13:25:47</LastIntrospectionLocalTimestamp>
       <LastIntrospectionVersion>200820</LastIntrospectionVersion>
-      <ModifiedTimestamp>2024-05-15.17:54:21</ModifiedTimestamp>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
       <ObjectId>109</ObjectId>
     </schema>
     <schema id="3" parent="1" name="ANONYMOUS">
@@ -95,9 +95,9 @@
     </schema>
     <schema id="28" parent="1" name="PUBLIC">
       <AutoIntrospectionLevel>1</AutoIntrospectionLevel>
-      <LastIntrospectionL1Timestamp>2024-05-15.17:54:29</LastIntrospectionL1Timestamp>
+      <LastIntrospectionL1Timestamp>2024-05-15.19:25:46</LastIntrospectionL1Timestamp>
       <LastIntrospectionLevel>1</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2024-05-15.11:54:30</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-05-15.13:25:47</LastIntrospectionLocalTimestamp>
       <ObjectId>1</ObjectId>
     </schema>
     <schema id="29" parent="1" name="REMOTE_SCHEDULER_AGENT">
@@ -417,11 +417,11 @@
     </routine>
     <sequence id="98" parent="2" name="SEQ_ACHIEVEMENT">
       <CacheSize>20</CacheSize>
-      <CreatedTimestamp>2024-05-09.18:07:52</CreatedTimestamp>
+      <CreatedTimestamp>2024-05-15.19:25:46</CreatedTimestamp>
       <DetailsLevel>2</DetailsLevel>
-      <ModifiedTimestamp>2024-05-09.18:07:52</ModifiedTimestamp>
-      <ObjectId>82468</ObjectId>
-      <SequenceIdentity>1(41)</SequenceIdentity>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <ObjectId>82531</ObjectId>
+      <SequenceIdentity>1(1)</SequenceIdentity>
     </sequence>
     <sequence id="99" parent="2" name="SEQ_ANGAJAT">
       <CacheSize>20</CacheSize>
@@ -457,19 +457,19 @@
     </sequence>
     <sequence id="103" parent="2" name="SEQ_COOKIECLICKER">
       <CacheSize>20</CacheSize>
-      <CreatedTimestamp>2024-05-09.18:07:52</CreatedTimestamp>
+      <CreatedTimestamp>2024-05-15.19:25:46</CreatedTimestamp>
       <DetailsLevel>2</DetailsLevel>
-      <ModifiedTimestamp>2024-05-09.18:07:52</ModifiedTimestamp>
-      <ObjectId>82461</ObjectId>
-      <SequenceIdentity>1(41)</SequenceIdentity>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <ObjectId>82529</ObjectId>
+      <SequenceIdentity>1(1)</SequenceIdentity>
     </sequence>
     <sequence id="104" parent="2" name="SEQ_COOKIEMAKER">
       <CacheSize>20</CacheSize>
-      <CreatedTimestamp>2024-05-09.18:07:52</CreatedTimestamp>
+      <CreatedTimestamp>2024-05-15.19:25:46</CreatedTimestamp>
       <DetailsLevel>2</DetailsLevel>
-      <ModifiedTimestamp>2024-05-09.18:07:52</ModifiedTimestamp>
-      <ObjectId>82471</ObjectId>
-      <SequenceIdentity>1(41)</SequenceIdentity>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <ObjectId>82532</ObjectId>
+      <SequenceIdentity>1(1)</SequenceIdentity>
     </sequence>
     <sequence id="105" parent="2" name="SEQ_FURNIZOR">
       <CacheSize>20</CacheSize>
@@ -521,11 +521,11 @@
     </sequence>
     <sequence id="111" parent="2" name="SEQ_PLAYER">
       <CacheSize>20</CacheSize>
-      <CreatedTimestamp>2024-05-09.18:07:52</CreatedTimestamp>
+      <CreatedTimestamp>2024-05-15.19:25:46</CreatedTimestamp>
       <DetailsLevel>2</DetailsLevel>
-      <ModifiedTimestamp>2024-05-09.18:07:52</ModifiedTimestamp>
-      <ObjectId>82464</ObjectId>
-      <SequenceIdentity>1(41)</SequenceIdentity>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <ObjectId>82530</ObjectId>
+      <SequenceIdentity>1(1)</SequenceIdentity>
     </sequence>
     <sequence id="112" parent="2" name="SEQ_PRODUCATOR">
       <CacheSize>20</CacheSize>
@@ -536,10 +536,10 @@
       <SequenceIdentity>1(215)+10..1000</SequenceIdentity>
     </sequence>
     <table id="113" parent="2" name="ACHIEVEMENTS">
-      <CreatedTimestamp>2024-05-15.17:54:13</CreatedTimestamp>
+      <CreatedTimestamp>2024-05-15.19:25:46</CreatedTimestamp>
       <DetailsLevel>3</DetailsLevel>
-      <ModifiedTimestamp>2024-05-15.17:54:13</ModifiedTimestamp>
-      <ObjectId>82521</ObjectId>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <ObjectId>82538</ObjectId>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
     <table id="114" parent="2" name="ANGAJATI">
@@ -585,24 +585,24 @@
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
     <table id="120" parent="2" name="COOKIECLICKERS">
-      <CreatedTimestamp>2024-05-15.17:54:07</CreatedTimestamp>
+      <CreatedTimestamp>2024-05-15.19:25:46</CreatedTimestamp>
       <DetailsLevel>3</DetailsLevel>
-      <ModifiedTimestamp>2024-05-15.17:54:07</ModifiedTimestamp>
-      <ObjectId>82516</ObjectId>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <ObjectId>82533</ObjectId>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
     <table id="121" parent="2" name="COOKIEMAKERS">
-      <CreatedTimestamp>2024-05-15.17:54:15</CreatedTimestamp>
+      <CreatedTimestamp>2024-05-15.19:25:46</CreatedTimestamp>
       <DetailsLevel>3</DetailsLevel>
-      <ModifiedTimestamp>2024-05-15.17:54:15</ModifiedTimestamp>
-      <ObjectId>82523</ObjectId>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <ObjectId>82540</ObjectId>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
     <table id="122" parent="2" name="CURSORS">
-      <CreatedTimestamp>2024-05-15.17:54:19</CreatedTimestamp>
+      <CreatedTimestamp>2024-05-15.19:25:46</CreatedTimestamp>
       <DetailsLevel>3</DetailsLevel>
-      <ModifiedTimestamp>2024-05-15.17:54:19</ModifiedTimestamp>
-      <ObjectId>82525</ObjectId>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <ObjectId>82542</ObjectId>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
     <table id="123" parent="2" name="FURNIZORI">
@@ -613,10 +613,10 @@
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
     <table id="124" parent="2" name="GRANDMAS">
-      <CreatedTimestamp>2024-05-15.17:54:21</CreatedTimestamp>
+      <CreatedTimestamp>2024-05-15.19:25:46</CreatedTimestamp>
       <DetailsLevel>3</DetailsLevel>
-      <ModifiedTimestamp>2024-05-15.17:54:21</ModifiedTimestamp>
-      <ObjectId>82527</ObjectId>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <ObjectId>82544</ObjectId>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
     <table id="125" parent="2" name="INFORMATII_LMD_ANGAJATI">
@@ -655,10 +655,10 @@
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
     <table id="130" parent="2" name="PLAYERS">
-      <CreatedTimestamp>2024-05-15.17:54:09</CreatedTimestamp>
+      <CreatedTimestamp>2024-05-15.19:25:46</CreatedTimestamp>
       <DetailsLevel>3</DetailsLevel>
-      <ModifiedTimestamp>2024-05-15.17:54:09</ModifiedTimestamp>
-      <ObjectId>82518</ObjectId>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <ObjectId>82535</ObjectId>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
     <table id="131" parent="2" name="PRODUCATORI">
@@ -60174,26 +60174,28 @@
       <DasType>NUMBER(*)|0s</DasType>
       <Position>5</Position>
     </column>
-    <foreign-key id="7588" parent="113" name="FK_PLAYER">
+    <foreign-key id="7588" parent="113" name="FK_PLAYER_ACHIEVEMENTS">
       <ColNames>PLAYER_ID</ColNames>
-      <ModifiedTimestamp>2024-05-15.17:54:13</ModifiedTimestamp>
-      <OnDelete>restrict</OnDelete>
-      <RefKeyName>PK_PLAYER</RefKeyName>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <OnDelete>cascade</OnDelete>
+      <RefKeyName>SYS_C008674</RefKeyName>
       <RefTableName>PLAYERS</RefTableName>
     </foreign-key>
-    <index id="7589" parent="113" name="PK_ACHIEVEMENT">
+    <index id="7589" parent="113" name="SYS_C008677">
       <ColNames>ACHIEVEMENT_ID</ColNames>
-      <CreatedTimestamp>2024-05-15.17:54:13</CreatedTimestamp>
-      <ModifiedTimestamp>2024-05-15.17:54:13</ModifiedTimestamp>
-      <ObjectId>82522</ObjectId>
+      <CreatedTimestamp>2024-05-15.19:25:46</CreatedTimestamp>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>82539</ObjectId>
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="7590" parent="113" name="PK_ACHIEVEMENT">
+    <key id="7590" parent="113" name="SYS_C008677">
       <InitiallyDeferred>1</InitiallyDeferred>
-      <ModifiedTimestamp>2024-05-15.17:54:13</ModifiedTimestamp>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK_ACHIEVEMENT</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C008677</UnderlyingIndexName>
     </key>
     <check id="7591" parent="114" name="CHK_SALARIU_POSITIV">
       <ColNames>SALARIU</ColNames>
@@ -60519,19 +60521,21 @@ ID_PIESA</ColNames>
       <DasType>NUMBER(*)|0s</DasType>
       <Position>2</Position>
     </column>
-    <index id="7646" parent="120" name="PK_COOKIECLICKER">
+    <index id="7646" parent="120" name="SYS_C008672">
       <ColNames>COOKIECLICKER_ID</ColNames>
-      <CreatedTimestamp>2024-05-15.17:54:07</CreatedTimestamp>
-      <ModifiedTimestamp>2024-05-15.17:54:07</ModifiedTimestamp>
-      <ObjectId>82517</ObjectId>
+      <CreatedTimestamp>2024-05-15.19:25:46</CreatedTimestamp>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>82534</ObjectId>
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="7647" parent="120" name="PK_COOKIECLICKER">
+    <key id="7647" parent="120" name="SYS_C008672">
       <InitiallyDeferred>1</InitiallyDeferred>
-      <ModifiedTimestamp>2024-05-15.17:54:07</ModifiedTimestamp>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK_COOKIECLICKER</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C008672</UnderlyingIndexName>
     </key>
     <column id="7648" parent="121" name="COOKIEMAKER_ID">
       <DasType>NUMBER(*)|0s</DasType>
@@ -60564,24 +60568,26 @@ ID_PIESA</ColNames>
     </column>
     <foreign-key id="7655" parent="121" name="FK_PLAYER_COOKIEMAKERS">
       <ColNames>PLAYER_ID</ColNames>
-      <ModifiedTimestamp>2024-05-15.17:54:15</ModifiedTimestamp>
-      <OnDelete>restrict</OnDelete>
-      <RefKeyName>PK_PLAYER</RefKeyName>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <OnDelete>cascade</OnDelete>
+      <RefKeyName>SYS_C008674</RefKeyName>
       <RefTableName>PLAYERS</RefTableName>
     </foreign-key>
-    <index id="7656" parent="121" name="PK_COOKIEMAKER">
+    <index id="7656" parent="121" name="SYS_C008679">
       <ColNames>COOKIEMAKER_ID</ColNames>
-      <CreatedTimestamp>2024-05-15.17:54:15</CreatedTimestamp>
-      <ModifiedTimestamp>2024-05-15.17:54:15</ModifiedTimestamp>
-      <ObjectId>82524</ObjectId>
+      <CreatedTimestamp>2024-05-15.19:25:46</CreatedTimestamp>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>82541</ObjectId>
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="7657" parent="121" name="PK_COOKIEMAKER">
+    <key id="7657" parent="121" name="SYS_C008679">
       <InitiallyDeferred>1</InitiallyDeferred>
-      <ModifiedTimestamp>2024-05-15.17:54:15</ModifiedTimestamp>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK_COOKIEMAKER</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C008679</UnderlyingIndexName>
     </key>
     <column id="7658" parent="122" name="CURSOR_ID">
       <DasType>NUMBER(*)|0s</DasType>
@@ -60590,24 +60596,26 @@ ID_PIESA</ColNames>
     </column>
     <foreign-key id="7659" parent="122" name="FK_CURSOR">
       <ColNames>CURSOR_ID</ColNames>
-      <ModifiedTimestamp>2024-05-15.17:54:19</ModifiedTimestamp>
-      <OnDelete>restrict</OnDelete>
-      <RefKeyName>PK_COOKIEMAKER</RefKeyName>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <OnDelete>cascade</OnDelete>
+      <RefKeyName>SYS_C008679</RefKeyName>
       <RefTableName>COOKIEMAKERS</RefTableName>
     </foreign-key>
-    <index id="7660" parent="122" name="PK_CURSOR">
+    <index id="7660" parent="122" name="SYS_C008681">
       <ColNames>CURSOR_ID</ColNames>
-      <CreatedTimestamp>2024-05-15.17:54:19</CreatedTimestamp>
-      <ModifiedTimestamp>2024-05-15.17:54:19</ModifiedTimestamp>
-      <ObjectId>82526</ObjectId>
+      <CreatedTimestamp>2024-05-15.19:25:46</CreatedTimestamp>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>82543</ObjectId>
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="7661" parent="122" name="PK_CURSOR">
+    <key id="7661" parent="122" name="SYS_C008681">
       <InitiallyDeferred>1</InitiallyDeferred>
-      <ModifiedTimestamp>2024-05-15.17:54:19</ModifiedTimestamp>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK_CURSOR</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C008681</UnderlyingIndexName>
     </key>
     <column id="7662" parent="123" name="ID_FURNIZOR">
       <DasType>NUMBER(3)|0s</DasType>
@@ -60656,24 +60664,26 @@ ID_PIESA</ColNames>
     </column>
     <foreign-key id="7670" parent="124" name="FK_GRANDMA">
       <ColNames>GRANDMA_ID</ColNames>
-      <ModifiedTimestamp>2024-05-15.17:54:21</ModifiedTimestamp>
-      <OnDelete>restrict</OnDelete>
-      <RefKeyName>PK_COOKIEMAKER</RefKeyName>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <OnDelete>cascade</OnDelete>
+      <RefKeyName>SYS_C008679</RefKeyName>
       <RefTableName>COOKIEMAKERS</RefTableName>
     </foreign-key>
-    <index id="7671" parent="124" name="PK_GRANDMA">
+    <index id="7671" parent="124" name="SYS_C008683">
       <ColNames>GRANDMA_ID</ColNames>
-      <CreatedTimestamp>2024-05-15.17:54:21</CreatedTimestamp>
-      <ModifiedTimestamp>2024-05-15.17:54:21</ModifiedTimestamp>
-      <ObjectId>82528</ObjectId>
+      <CreatedTimestamp>2024-05-15.19:25:46</CreatedTimestamp>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>82545</ObjectId>
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="7672" parent="124" name="PK_GRANDMA">
+    <key id="7672" parent="124" name="SYS_C008683">
       <InitiallyDeferred>1</InitiallyDeferred>
-      <ModifiedTimestamp>2024-05-15.17:54:21</ModifiedTimestamp>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK_GRANDMA</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C008683</UnderlyingIndexName>
     </key>
     <column id="7673" parent="125" name="ID">
       <DasType>NUMBER(*)|0s</DasType>
@@ -60905,39 +60915,41 @@ ID_PIESA</ColNames>
     </column>
     <foreign-key id="7716" parent="130" name="FK_COOKIECLICKER">
       <ColNames>COOKIECLICKER_ID</ColNames>
-      <ModifiedTimestamp>2024-05-15.17:54:10</ModifiedTimestamp>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
-      <RefKeyName>PK_COOKIECLICKER</RefKeyName>
+      <RefKeyName>SYS_C008672</RefKeyName>
       <RefTableName>COOKIECLICKERS</RefTableName>
     </foreign-key>
-    <index id="7717" parent="130" name="PK_PLAYER">
+    <index id="7717" parent="130" name="SYS_C008674">
       <ColNames>PLAYER_ID</ColNames>
-      <CreatedTimestamp>2024-05-15.17:54:09</CreatedTimestamp>
-      <ModifiedTimestamp>2024-05-15.17:54:09</ModifiedTimestamp>
-      <ObjectId>82519</ObjectId>
+      <CreatedTimestamp>2024-05-15.19:25:46</CreatedTimestamp>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>82536</ObjectId>
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <index id="7718" parent="130" name="SYS_C008662">
+    <index id="7718" parent="130" name="SYS_C008675">
       <ColNames>NAME</ColNames>
-      <CreatedTimestamp>2024-05-15.17:54:10</CreatedTimestamp>
-      <ModifiedTimestamp>2024-05-15.17:54:10</ModifiedTimestamp>
+      <CreatedTimestamp>2024-05-15.19:25:46</CreatedTimestamp>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>82520</ObjectId>
+      <ObjectId>82537</ObjectId>
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="7719" parent="130" name="PK_PLAYER">
+    <key id="7719" parent="130" name="SYS_C008674">
       <InitiallyDeferred>1</InitiallyDeferred>
-      <ModifiedTimestamp>2024-05-15.17:54:09</ModifiedTimestamp>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PK_PLAYER</UnderlyingIndexName>
-    </key>
-    <key id="7720" parent="130" name="SYS_C008662">
-      <InitiallyDeferred>1</InitiallyDeferred>
-      <ModifiedTimestamp>2024-05-15.17:54:10</ModifiedTimestamp>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <UnderlyingIndexName>SYS_C008662</UnderlyingIndexName>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>SYS_C008674</UnderlyingIndexName>
+    </key>
+    <key id="7720" parent="130" name="SYS_C008675">
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ModifiedTimestamp>2024-05-15.19:25:46</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <UnderlyingIndexName>SYS_C008675</UnderlyingIndexName>
     </key>
     <column id="7721" parent="131" name="ID_PRODUCATOR">
       <DasType>NUMBER(3)|0s</DasType>

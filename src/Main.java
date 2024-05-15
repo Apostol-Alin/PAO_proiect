@@ -64,7 +64,12 @@ public class Main {
         }
 
         if(name.equals("0")){
-            //delete code
+            System.out.println("Please enter the player you want to delete: ");
+            String playerToDelete = scanner.next();
+            int cookieClickerId = playerRepository.getCookieClickerId(playerToDelete);
+            playerRepository.deletePlayer(playerToDelete);
+            ccr.deleteCookieClicker(cookieClickerId);
+
         } else if (playerAlreadyExists) {
             Player p = PlayerRepository.getInstance().getFullPlayerByName(name);
             game_service game = new game_service(p);

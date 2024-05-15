@@ -5,12 +5,18 @@ public class Grandma extends CookieMaker{
         super(time_to_wait, ammount, cost, img_path);
     }
 
+    //TO DO: FIX THIS FUNCTION
     @Override
     public void bonus(Player p) {
-        //gives the player a bonus cursor :D
+        try {
+            long cookies_per_click = p.get_clicker().get_cookies_per_click();
+            p.get_clicker().set_cookies_per_click(cookies_per_click + 1);
+        }catch (Exception ex){
+            System.out.println(ex);
+        }
     }
     @Override
     public final String describeBonus(){
-        return "Nothing yet.";
+        return "+1 for your clicker :D";
     }
 }

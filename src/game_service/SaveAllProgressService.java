@@ -18,15 +18,12 @@ public class SaveAllProgressService {
         int player_id = playerRepository.getPlayerId(p.get_name());
         int cookieClicker_id = playerRepository.getCookieClickerId(p.get_name());
         ccr.updateCookies_per_click(cookieClicker_id, p.get_clicker().get_cookies_per_click());
-        System.out.println("Updated ccr");
         playerRepository.updateCookies(player_id, p.get_cookies());
-        System.out.println("Updated cookies");
         for(var ach: p.getAchievements()){
             int val = 0;
             if(ach.isAchieved())
                 val = 1;
             achievementRepository.updateAchieved(ach.getName(), player_id, val);
-            System.out.println("Updated achievement");
         }
         for(var cookieMaker : p.getCookieMakerList()){
             int id;
@@ -41,7 +38,6 @@ public class SaveAllProgressService {
                 throw new RuntimeException("Error of cookieMaker instance");
             }
             cookieMakerRepository.updateAll(id, cookieMaker, p.getHowManyCookieMaker(cookieMaker));
-            System.out.println("Update cookiemaker");
         }
         DBManager.getInstance().executeUpdate("COMMIT");
     }

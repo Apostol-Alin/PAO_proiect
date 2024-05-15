@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd01cc40-5592-48cf-a4d3-ddcef39cc0ad" name="Changes" comment="new game and start an old session added">
+    <list default="true" id="bd01cc40-5592-48cf-a4d3-ddcef39cc0ad" name="Changes" comment="minor issues fixed">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e7e027e9-f194-462b-9fc7-d880dfcaaf7e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e7e027e9-f194-462b-9fc7-d880dfcaaf7e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Buttons/BuyCookieMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Buttons/BuyCookieMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/CookieMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CookieMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CREATE_TABLES.sql" beforeDir="false" afterPath="$PROJECT_DIR$/CREATE_TABLES.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DBRepositories/CookieClickerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DBRepositories/CookieClickerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DBRepositories/PlayerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DBRepositories/PlayerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game_service/SaveAllProgressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_service/SaveAllProgressService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Grandma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Grandma.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +133,7 @@
       <workItem from="1715590316882" duration="938000" />
       <workItem from="1715753208438" duration="878000" />
       <workItem from="1715772268713" duration="1556000" />
-      <workItem from="1715773927463" duration="4951000" />
+      <workItem from="1715773927463" duration="7849000" />
     </task>
     <task id="LOCAL-00001" summary="trying some things">
       <option name="closed" value="true" />
@@ -250,7 +255,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715777078274</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="minor issues fixed">
+      <option name="closed" value="true" />
+      <created>1715779166853</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1715779166853</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +295,8 @@
     <MESSAGE value="readme" />
     <MESSAGE value="init DBConnection and DBManager" />
     <MESSAGE value="new game and start an old session added" />
-    <option name="LAST_COMMIT_MESSAGE" value="new game and start an old session added" />
+    <MESSAGE value="minor issues fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor issues fixed" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
