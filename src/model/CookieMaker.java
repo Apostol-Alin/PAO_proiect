@@ -14,7 +14,7 @@ public abstract class CookieMaker implements Comparable<CookieMaker>{
     private long ammount; // cookies
     private final long cost;
     private String img_path;
-    java.util.Timer timer;
+    private java.util.Timer timer;
     public CookieMaker(double time_to_wait, long ammount, long cost, String img_path) throws Exception{
         if(time_to_wait <= 0 || ammount <= 0)
             throw new Exception("Invalid parameters for cookie maker");

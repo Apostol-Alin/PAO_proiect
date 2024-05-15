@@ -69,7 +69,7 @@ public final class BuyCookieMaker extends JButton {
                     text += "</html>";
                     game_service.getAchievementsLabel().setText(text);
                     try {
-                        if(p.getHowManyCookieMaker(c) != 0){
+                        if(p.getHowManyCookieMaker(c) != 0 && !game_service.getCookieMakerPorgressBar_at(label_index).isVisible()){ // do not mess up timer
                             game_service.getCookieMakerPorgressBar_at(label_index).setVisible(true); // Make the cooking time progress bar visible
                             c.setTimer(p, game_service.getPlayerInfo(), game_service.getCookieMakerPorgressBar_at(label_index)); //Set up and start the timer for cooking the Cookies
                         }

@@ -11,6 +11,7 @@ import java.awt.event.WindowEvent;
 import java.util.ArrayList;
 import java.util.Collections;
 import ProgressBars.*;
+import model.Cursor;
 
 
 public class game_service {
@@ -74,6 +75,36 @@ public class game_service {
         AchievementsPanel.setVisible(true);
         AchievementsPanel.add(AchievementsLabel, JLabel.CENTER);
         AchievementFrame.add(AchievementsPanel);
+        for(var c: CookieMakers) {
+            String z;
+            try {
+                z = String.valueOf(player.getHowManyCookieMaker(c));
+            } catch (Exception ex) {
+                z = "0";
+            }
+            String text = "<html>";
+            for (var ach : player.getAchievements()) {
+                switch (ach.getName()) {
+                    case "Click that!":
+                        if (c.getClass() == Cursor.class && Integer.parseInt(z) == 10) {
+                            ach.setAchieved(true);
+                        }
+                        break;
+                    case "Who doesn't like grandma's cookies?":
+                        if (c.getClass() == Grandma.class && Integer.parseInt(z) == 5) {
+                            ach.setAchieved(true);
+                        }
+                        break;
+                    default:
+                        break;
+                }
+                if (ach.isAchieved()) {
+                    text += ach.getName() + "<br/>" + ach.getDescription() + "<br/><br/>";
+                }
+            }
+            text += "</html>";
+            getAchievementsLabel().setText(text);
+        }
     }
     private void setUpMainFrame(){
         //Create main frame
