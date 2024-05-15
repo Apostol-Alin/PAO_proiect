@@ -1,8 +1,8 @@
 package model;
 
 public class Achievement {
-    private String name;
-    private String description;
+    private final String name;
+    private final String description;
     private boolean achieved;
 
     public Achievement(String name, String description, Boolean achieved) {

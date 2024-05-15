@@ -5,10 +5,6 @@ public class Grandma extends CookieMaker{
         super(time_to_wait, ammount, cost, img_path);
     }
 
-    public Grandma(Grandma c){
-        super(c);
-    }
-
     @Override
     public void bonus(Player p) {
         //gives the player a bonus cursor :D

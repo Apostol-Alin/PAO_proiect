@@ -55,12 +55,6 @@ public abstract class CookieMaker implements Comparable<CookieMaker>{
     public int hashCode(){
         return Objects.hash(this.cost, this.time_to_wait, this.ammount, this.img_path);
     }
-    public CookieMaker(CookieMaker c){
-        this.time_to_wait = c.time_to_wait;
-        this.ammount = c.ammount;
-        this.cost = c.cost;
-        this.img_path = c.img_path;
-    }
     public long getAmmount() {
         return this.ammount;
     }
@@ -84,6 +78,7 @@ public abstract class CookieMaker implements Comparable<CookieMaker>{
     public int compareTo(CookieMaker ob){
         return Long.compare(ammount, ob.ammount);
     }
+
     @Override
     public String toString(){
         return this.getClass().getName().replaceAll("model.", "") + "\nCost: " + this.cost + "\n Cookies: " + this.ammount + "\n Seconds: " + this.time_to_wait;

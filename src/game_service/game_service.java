@@ -6,6 +6,8 @@ import Repositories.CookieMakerRepository;
 import model.*;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.util.ArrayList;
 import java.util.Collections;
 import ProgressBars.*;
@@ -27,7 +29,10 @@ public class game_service {
     public game_service(Player p){
         this.player = p;
         try{
-            this.CookieMakers = CookieMakerRepository.retCookieMakersList();
+            // get the cookieMakers from Player...
+            this.CookieMakers = p.getCookieMakerList();
+
+            Collections.sort(this.CookieMakers);
             this.CookieMakersLabels = new JLabel[this.CookieMakers.size()];
             this.CookieMakersProgressBars = new CookieMakerProgressBar[this.CookieMakers.size()];
             this.CookieMakerBonusLabels = new JLabel[this.CookieMakers.size()];
@@ -75,6 +80,17 @@ public class game_service {
         MainFrame = new JFrame("Cookie clicker");
         MainFrame.setSize(1000,1000);
         MainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        MainFrame.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                try {
+                    SaveAllProgressService.saveAllProgress(player);
+                } catch (Exception ex) {
+                    throw new RuntimeException(ex);
+                }
+                super.windowClosing(e);
+            }
+        });
         MainFrame.setLocationRelativeTo(null);
         MainFrame.setLayout(new BorderLayout());
         MainFrame.getContentPane().setBackground(Color.darkGray);
@@ -105,7 +121,7 @@ public class game_service {
         PlayerPanel.add(achievementButton);
 
     }
-    private void setUpShopPanel(){
+    private void setUpShopPanel() throws Exception {
         ImageIcon background = new ImageIcon("pictures/background.png");
         Image bckg = background.getImage();
         ShopPanel = new JPanel(){
@@ -151,6 +167,10 @@ public class game_service {
 
             gridBagConstraints.gridy = 3;
             ShopPanel.add(this.CookieMakersProgressBars[i], gridBagConstraints);
+            if(player.getHowManyCookieMaker(CookieMakers.get(i)) != 0){
+                CookieMakersProgressBars[i].setVisible(true); // Make the cooking time progress bar visible
+                CookieMakers.get(i).setTimer(player, getPlayerInfo(), CookieMakersProgressBars[i]); //Set up and start the timer for cooking the Cookies
+            }
 
         }
     }
@@ -164,7 +184,7 @@ public class game_service {
     public CookieMaker getCookieMaker_at(int index){
         return this.CookieMakers.get(index);
     }
-    private void createGUI(){
+    private void createGUI() throws Exception {
         setUpMainFrame();
         setUpAchievementFrame();
         setUpPlayerPanel();
@@ -175,7 +195,7 @@ public class game_service {
         MainFrame.add(ShopPanel, BorderLayout.CENTER);
         MainFrame.setVisible(true);
     }
-    public void run(){
+    public void run() throws Exception {
         this.createGUI();
     }
 

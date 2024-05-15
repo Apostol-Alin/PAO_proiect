@@ -16,7 +16,4 @@ public class Cursor extends CookieMaker{
         p.update_cookies(1);
         //when bought, it gives a player a bonus cookie :)
     }
-    public Cursor(Cursor c){
-        super(c);
-    }
 }

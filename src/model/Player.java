@@ -10,8 +10,8 @@ public final class Player {
     private final Hashtable<CookieMaker, Integer> cookieMakers;
     private ArrayList<Achievement> achievements;
     private final static String pic = "pictures/player.png";
-    private static Player player_instance = null;
-    private Player(String name, long cookies, CookieClicker cookieClickerInstance) throws Exception {
+
+    public Player(String name, long cookies, CookieClicker cookieClickerInstance) throws Exception {
         if(cookies < 0)
             throw new Exception("Invalid number of cookies!");
         this.name = name;
@@ -22,31 +22,28 @@ public final class Player {
     public void addCookieMaker(CookieMaker c){
         cookieMakers.merge(c, 1, Integer::sum);
     }
+    public void initCookieMakerHashtable(CookieMaker c){
+        cookieMakers.put(c, 0);
+    }
     public int getHowManyCookieMaker(CookieMaker c) throws Exception{
         if(this.cookieMakers.get(c) == null)
             throw new Exception("None");
         else
             return this.cookieMakers.get(c);
     }
-
-    public static Player getInstance(String name, long cookies, CookieClicker clicker) throws Exception {
-        if(player_instance == null) {
-            if(clicker == null)
-                player_instance = new Player(name, cookies, CookieClicker.getCookieClicker_instance(1));
-            else
-                player_instance = new Player(name, cookies, clicker);
-        }
-        return player_instance;
+    public ArrayList<CookieMaker> getCookieMakerList(){
+        return new ArrayList<>(cookieMakers.keySet());
     }
+
     public final String get_name(){
-        return player_instance.name;
+        return name;
     }
     public long get_cookies(){
-        return player_instance.cookies;
+        return cookies;
     }
     @Override
     public String toString(){
-        return "Name: " + player_instance.name + "\nCookies: " + player_instance.cookies;
+        return "Name: " + name + "\nCookies: " + cookies;
     }
     public void update_cookies(long ammount){
         this.cookies += ammount;
@@ -57,6 +54,9 @@ public final class Player {
     public ArrayList<Achievement> getAchievements(){return achievements;}
     public CookieClicker get_clicker(){
         return clicker;
+    }
+    public void set_clicker(CookieClicker c){
+        this.clicker = c;
     }
     public static String get_pic(){
         return Player.pic;
