@@ -45,6 +45,7 @@ public class Main {
 
         game_service game = new game_service(p);
         game.run();
+        audit_service.log("Player " + p.get_name() + " started a new game");
     }
 
     private static final Scanner scanner = new Scanner(System.in);
@@ -69,10 +70,12 @@ public class Main {
             int cookieClickerId = playerRepository.getCookieClickerId(playerToDelete);
             playerRepository.deletePlayer(playerToDelete);
             ccr.deleteCookieClicker(cookieClickerId);
+            audit_service.log("Player " + playerToDelete + " was deleted");
 
         } else if (playerAlreadyExists) {
             Player p = PlayerRepository.getInstance().getFullPlayerByName(name);
             game_service game = new game_service(p);
+            audit_service.log("Started new session with " + p.get_name());
             game.run();
         }
         else{
